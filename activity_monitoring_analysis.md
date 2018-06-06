@@ -35,7 +35,7 @@ ggplot(steps_by_day, aes(x = steps)) +
     ggtitle("Total Steps Per Day")
 ```
 
-![](activity_data_analysis_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](activity_monitoring_analysis_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 Now we calculate the mean and median daily step counts.
 
@@ -69,7 +69,7 @@ ggplot(interval_step_means, aes(interval, steps)) +
     ggtitle("Mean Step Count Over the Day")
 ```
 
-![](activity_data_analysis_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](activity_monitoring_analysis_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 
 ```r
@@ -120,7 +120,7 @@ ggplot(steps_by_day_imputed, aes(x = steps)) +
     ggtitle("Total steps per day (missing values imputed)")
 ```
 
-![](activity_data_analysis_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](activity_monitoring_analysis_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 
 ```r
@@ -160,4 +160,4 @@ ggplot(data_imputed, aes(interval, steps)) +
     ggtitle("Steps per interval by part of week")
 ```
 
-![](activity_data_analysis_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](activity_monitoring_analysis_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
