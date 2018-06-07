@@ -19,7 +19,7 @@ data$date <- as.Date(data$date, "%Y-%m-%d")
 ```
 
 
-## What is mean total number of steps taken per day?
+## What is the mean total number of steps taken per day?
 
 The first step here is to calculate the total step count for each day. Then,
 before caculating any summary statistics, a histogram is plotted to give a
@@ -150,7 +150,7 @@ is_weekend <- function(date) {
 data_imputed$weekday <- as.factor(sapply(data_imputed$date, is_weekend))
 ```
 
-After caclculating the mean step count by interval and type of day, a 2-panel 
+After calculating the mean step count by interval and type of day, a 2-panel 
 time-series plot is created to visually represent the difference in mean steps
 per interval based on whether it is a weekday or weekend.
 
