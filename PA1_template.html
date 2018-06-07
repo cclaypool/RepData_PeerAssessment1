@@ -130,8 +130,8 @@ $(document).ready(function () {
 <pre class="r"><code>data &lt;- read.csv(unz(&quot;activity.zip&quot;, &quot;activity.csv&quot;))
 data$date &lt;- as.Date(data$date, &quot;%Y-%m-%d&quot;)</code></pre>
 </div>
-<div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level2">
-<h2>What is mean total number of steps taken per day?</h2>
+<div id="what-is-the-mean-total-number-of-steps-taken-per-day" class="section level2">
+<h2>What is the mean total number of steps taken per day?</h2>
 <p>The first step here is to calculate the total step count for each day. Then, before caculating any summary statistics, a histogram is plotted to give a visual overview of the distribution of daily step counts.</p>
 <pre class="r"><code>daily_steps &lt;- aggregate(steps ~ date, data, sum)
 
@@ -218,7 +218,7 @@ print(paste(&quot;Mean:&quot;, mean_steps_imputed))</code></pre>
 }
 
 data_imputed$weekday &lt;- as.factor(sapply(data_imputed$date, is_weekend))</code></pre>
-<p>After caclculating the mean step count by interval and type of day, a 2-panel time-series plot is created to visually represent the difference in mean steps per interval based on whether it is a weekday or weekend.</p>
+<p>After calculating the mean step count by interval and type of day, a 2-panel time-series plot is created to visually represent the difference in mean steps per interval based on whether it is a weekday or weekend.</p>
 <pre class="r"><code>steps_weekday &lt;- aggregate(steps ~ interval + weekday, data_imputed, mean)
 
 ggplot(steps_weekday, aes(interval, steps, color = weekday)) + 
