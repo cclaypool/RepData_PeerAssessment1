@@ -1,5 +1,5 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
+title: "An Exploratory Analysis of Activity Monitoring Data"
 author: "Connor Claypool"
 output: 
   html_document:
@@ -38,7 +38,7 @@ ggplot(daily_steps, aes(x = steps)) +
     ggtitle("Distribution of Daily Step Counts")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](activity_monitoring_analysis_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
 
 Next, the mean and median daily step counts are calculated.
 
@@ -80,7 +80,7 @@ ggplot(interval_mn_steps, aes(interval, steps)) +
     ggtitle("Average Daily Activity Pattern")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](activity_monitoring_analysis_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 Next, the interval with the highest mean step count is calculated.
 
@@ -149,7 +149,7 @@ ggplot(daily_steps_imputed, aes(x = steps)) +
     ggtitle("Distribution of Daily Step Counts (Missing Values Imputed)")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](activity_monitoring_analysis_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
 
 Next, the mean and median daily step counts are recalculated using this dataset.
 
@@ -212,4 +212,4 @@ ggplot(steps_weekday, aes(interval, steps, color = weekday)) +
     ggtitle("Average Daily Activity Patterns for Weekdays vs. Weekends")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](activity_monitoring_analysis_files/figure-html/unnamed-chunk-11-1.png)<!-- -->

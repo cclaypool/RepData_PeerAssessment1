@@ -1,5 +1,5 @@
 ---
-title: "Reproducible Research: Peer Assessment 1"
+title: "An Exploratory Analysis of Activity Monitoring Data"
 author: "Connor Claypool"
 output: 
   html_document:
